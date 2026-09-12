@@ -2184,7 +2184,7 @@ const CSS = `
 }
 .pc-root *{box-sizing:border-box;}
 .pc-root .num{font-family:'Space Grotesk',sans-serif; font-feature-settings:"tnum" 1;}
-.pc-root button{font-family:inherit; cursor:pointer;}
+.pc-root button{font-family:inherit; cursor:pointer; -webkit-appearance:none; appearance:none;}
 .pc-root input, .pc-root select, .pc-root textarea{
   width:100%; background:var(--surface-2); border:1px solid var(--border-soft); color:var(--text);
   border-radius:9px; padding:10px 12px; font-size:15.5px; font-family:inherit; transition:border-color .15s;
@@ -2243,7 +2243,7 @@ const CSS = `
 .owner-shell{ display:grid; grid-template-columns:250px 1fr; min-height:100vh; }
 .owner-sidebar{ background:var(--surface); border-right:1px solid var(--border-soft); padding:26px 18px; display:flex; flex-direction:column; gap:28px; position:sticky; top:0; align-self:start; height:100vh; overflow-y:auto; }
 .side-nav{ display:flex; flex-direction:column; gap:3px; }
-.side-nav-item{ display:flex; align-items:center; gap:12px; padding:11px 13px; border-radius:11px; color:var(--text-dim); font-size:14.5px; font-weight:700; text-align:left; transition:background .15s,color .15s; }
+.side-nav-item{ display:flex; align-items:center; gap:12px; padding:11px 13px; border-radius:11px; background:none; border:none; color:var(--text-dim); font-size:14.5px; font-weight:700; text-align:left; transition:background .15s,color .15s; }
 .side-nav-item:hover{ background:var(--surface-2); color:var(--text); }
 .side-nav-ic{ width:20px; height:20px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
 .side-nav-ic svg{ width:19px; height:19px; }
